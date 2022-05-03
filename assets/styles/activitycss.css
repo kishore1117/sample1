@@ -53,12 +53,12 @@ body{
 	color: black;
 
 }
-.flex-container{
-	display:inline-flex;
+.flex-container {
+	display: flex;
 	flex-wrap: wrap;
-	align-content: space-between;
-	background: black;
+
 }
+
 body{
 	background-color:#ccccff;
 	background-image: url(https://images.pexels.com/photos/3369236/pexels-photo-3369236.jpeg );
@@ -103,10 +103,12 @@ body{
 	height: auto;
 	wigth:20;
 	overflow: hidden;
+	display: flex;
+	align-items: center;
 }
 .container1 img{
 	width: 100;
-	display:block;
+	dlaispy:block;
 	transition:transform 2s;
 }
 .container1:hover img{
@@ -125,6 +127,11 @@ padding:20px ;
 .About h3{
 	padding:10px ;
 }
+.About{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
 .Contact{
 	margin-left:560px ;
 	padding-bottom:70px ;
@@ -137,4 +144,19 @@ padding:20px ;
 	padding: 15px;
 	margin-left:610px ;
 	font-size:20px ;
+	display: flex;
+	align-items: center;
+}
+.flex-container:hover div {
+
+tranform: scale(1.3);
+}
+.flex-container >:hover img{
+	transform: scale(1.3);
+	transition: transform 2s;
+	align-items: center;
+}
+.flex-container{
+	display: flex;
+	transition:transform 2s ;
 }
