@@ -1,0 +1,140 @@
+.page-header{
+	background:#ffb3b3 ;
+	border: 0px ;
+	height: 60px;    
+	position: ;
+	text-align:  center;
+	font-style:italic;
+	border: 0.5px solid black;
+
+}
+h1{
+	font-family: 'Bebas Neue', cursive;
+}
+
+h3{
+	font-family: 'Bebas Neue', cursive;
+}
+ul{
+	font-family: 'Bebas Neue', cursive;
+}
+body{
+	margin:0px;
+}
+
+.flex-container div{
+	display: flex;
+	
+	background: #f1f1f1;
+	 margin: 10px;
+     padding: 5px;
+     font-size: 15px;
+}
+
+.flex-container1{
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: grey;
+	align-content: space-between;
+}
+.flex-container1 div{
+	background-color: black;
+	width: 40%;
+	margin: 20px;
+	text-align: center;
+	border-radius: 8px;
+
+
+
+
+}
+.flex-container1 div:hover{
+	background-color: #ddd;
+	color: black;
+
+}
+.flex-container{
+	display:inline-flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	background: black;
+}
+body{
+	background-color:#ccccff;
+	background-image: url(https://images.pexels.com/photos/3369236/pexels-photo-3369236.jpeg );
+	background-repeat: repeat;
+	background-size: cover;
+
+
+
+
+}
+.footer-dark {
+  padding: 10px;
+  color:black;
+  background-color:#282d32;
+  position: relative;
+  background-image:url(ction_cms_storage/CMS-Images-production/Blog/Generic_headers/fall-back-hero-image15@2x.jpg) ;
+  background-repeat: no-repeat;
+ background-size:cover;
+
+
+}
+.footer-dark h1 {
+	font-family: 'Bebas Neue', cursive;
+ 
+	margin-left:620px ;
+	font-size: 40px;
+}
+
+
+
+.footer-dark ul li   {
+  color:inherit;
+  text-decoration:none;
+  margin-left: 590px;	
+  opacity:2;
+  font-family: URW Chancery L, cursive;
+}
+.footer-dark a {
+	color: inherit;
+}
+.container1{
+	height: auto;
+	wigth:20;
+	overflow: hidden;
+}
+.container1 img{
+	width: 100;
+	display:block;
+	transition:transform 2s;
+}
+.container1:hover img{
+	transform:scale(1.3)
+}
+.container1{
+margin:50px  ;
+padding:20px ;
+}
+
+.About h1{
+	padding: 15px ;
+	margin-left:610px ;
+	font-size: 40px;
+}
+.About h3{
+	padding:10px ;
+}
+.Contact{
+	margin-left:560px ;
+	padding-bottom:70px ;
+	font-size:20px ;
+}
+.Contact h1{
+	margin-left:70px ;
+}
+.Gallery{
+	padding: 15px;
+	margin-left:610px ;
+	font-size:20px ;
+}
