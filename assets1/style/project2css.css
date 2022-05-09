@@ -15,7 +15,7 @@ body{
     
     color: aliceblue;
     padding-top:1em;
-    padding-left:2em ;
+    padding-left:1em ;
     font-family: system-ui;
     font-size: 18px;
     text-align: center;
@@ -118,6 +118,7 @@ body{
     width: auto;
     height: 300px;
     text-align: center;
+    padding-right: 2em;
     background-image: url(https://ak.picdn.net/shutterstock/videos/26245283/thumb/1.jpg);
     background-size: cover;
     color: #fff;
@@ -125,10 +126,13 @@ body{
     opacity: 1.0;
     padding-top:2em;
     padding-left:2em ;
-    align-content: center;
     
 }
-    
+.footer p{
+    font-size: 20px;
+}
+.
+  
 
 
 
