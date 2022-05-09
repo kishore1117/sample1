@@ -1,0 +1,137 @@
+body{
+    background-color:lightpink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    margin-top: 0px;
+}
+.header{
+    width: auto;
+    height: 300px;
+    background-image: url(https://ak.picdn.net/shutterstock/videos/26245283/thumb/1.jpg);
+    background-size: cover;
+    z-index: -3;
+    opacity: 1.0;
+    
+    color: aliceblue;
+    padding-top:1em;
+    padding-left:2em ;
+    font-family: system-ui;
+    font-size: 18px;
+    text-align: center;
+  
+}
+.header h1 {
+    text-align: center;
+}
+
+ .content{
+    border: 1px solid #666;  
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #fff;
+    background: #333; 
+    display: inline-block;
+    border-radius: 12px;
+ }
+ .body{
+     padding:1em ;
+     font-family: system-ui;
+
+ }
+ .flex-contents{
+     width: auto;
+     height: auto;
+     background-image: url(https://st3.depositphotos.com/30182098/32180/v/450/depositphotos_321804978-stock-illustration-vector-abstract-upholstery-matte-black.jpg);
+     display: flex;
+     flex-wrap: nowrap;
+     padding: 2em;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+ .animation{
+     width: 20%;
+     height: 20%;
+     background-image: url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-mauve.png);
+     padding: 2em;
+     
+ }
+ .animation img{
+     display: block;
+     width: 100%;
+     height: auto;
+
+ }
+
+ .photoshop{
+    width: 20%;
+    height:20%;
+    background-image: url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-mauve.png);
+    padding: 2em;
+    
+}
+.photoshop img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+.videoediting{
+    width: 20%;
+    height:20%;
+    background-image: url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-mauve.png);
+    padding: 2em;
+    
+}
+.videoediting img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+.introduction{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 2em;
+    text-align: center;
+    
+}
+.introduction h2{
+    
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.discription{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 2em;
+    text-align: center;
+    
+}
+.discription h2{
+    
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.footer{
+    width: auto;
+    height: 300px;
+    text-align: center;
+    background-image: url(https://ak.picdn.net/shutterstock/videos/26245283/thumb/1.jpg);
+    background-size: cover;
+    color: #fff;
+    z-index: -3;
+    opacity: 1.0;
+    padding-top:2em;
+    padding-left:2em ;
+    align-content: center;
+    
+}
+    
+
+
+
+
+  
+
