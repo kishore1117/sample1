@@ -70,6 +70,7 @@ body{
      width: auto;
      height: auto;
      background-image: url(https://st3.depositphotos.com/30182098/32180/v/450/depositphotos_321804978-stock-illustration-vector-abstract-upholstery-matte-black.jpg);
+    
      display: flex;
      flex-wrap: nowrap;
      padding: 2em;
@@ -142,24 +143,7 @@ body{
     padding-bottom: 0.5em;
 }
 
-.slider{
-    width: 430px;
-    height: 500px;
-    border-radius: 10px;
-   overflow: hidden;
-}
-.slides{
-    width: 500%;
-    height: 500px;
-   
-}
-.sildes input{
-    display: none;
-}
-.slide{
-    width: 20%;
-    transition: 2s;
-}
+
 .creator{
     background-color: #151515;
     color: rgb(255, 255, 255);
