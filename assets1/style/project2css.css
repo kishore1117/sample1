@@ -504,8 +504,31 @@ form button{
 .contact info{
     background: #24262b;
 }
+.contactus{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    align-content: center;
+    align-items: center;
+    background-color: #555;
+    text-align: center;
+}
+.contact form{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 
-
+}
+.contact .infoBox{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.contact .map{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
 
   
 
