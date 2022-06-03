@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title> just now creation </title>
-    <link rel="stylesheet" href="assets1/style/project2css.css">
+    <link rel="stylesheet" href="assets1/project2css.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
@@ -12,19 +12,21 @@
 <body>
     <div class="header">
         <div class="logo">
-            <img src="assets1/images/2.jpeg">
+            
+            
         </div>
         <div class="nav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#section-1">Works</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#About"><i class="fa fa-info"></i>About</a></li>
+                <li><a href="#section-1"><i class="fa fa-briefcase"></i>Works</a></li>
+                <li><a href="#gallery"><i class="fa fa-image"></i>Gallery</a></li>
+                <li><a href="#Contact"><i class="fa fa-envelope"></i>Contact</a></li>
             </ul>
         </div>
     </div>
     <div id="home" class="box">
-        <h2><span>Just now creation </span></h2>
+        <h2>Just now creation </h2>
         <p> Just now creation is a organization with young talents,with a common goal to achive higher heights in this
             field of creativity.As a team we work to achieve the needs of the customers specific reqiurements and we
             provide a eligent touch to every project we do with attracts more customers to our organization. </p>
@@ -43,6 +45,10 @@
                 paper cutouts, puppets, or clay figures.</p>
         </div>
         <div id="section-1" class="flex-contents">
+                 <!--video src="assets1/images/4.mp4" autoplay muted loop ></video-->
+                 
+                 <div id="body">
+           
             <div class="animation">
                 <h2>Animation</h2>
                 <img src="https://learn.g2.com/hubfs/free%20animation%20software-1.png">
@@ -64,6 +70,7 @@
                 <p>Video editing is the manipulation and arrangement of video shots. Video editing is used to structure
                     and present all video information, including films and television shows, video advertisements and
                     video essays</p>
+            </div>
             </div>
 
         </div>
@@ -92,6 +99,70 @@
                 </div>
             </div>
         </section>
+    </div>
+    <h2 style="text-align:center">Slideshow Gallery</h2>
+
+    <div class="containerx" id="gallery">
+        <div class="frame">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="assets/images/44.jpg" style="width:50%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="assets/images/45.jpg" style="width:50%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="assets/images/46.jpg" style="width:50%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="assets/images/47.jpg" style="width:50%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="assets/images/48.jpg" style="width:50%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="assets/images/49.jpg" style="width:50%">
+      </div>
+      <div class="navigation">  
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="assets/images/44.jpg" style="width:50%" onclick="currentSlide(1)" alt="The Woods">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="assets/images/45.jpg" style="width:50%" onclick="currentSlide(2)" alt="Cinque Terre">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="assets/images/46.jpg" style="width:50%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="assets/images/47.jpg" style="width:50%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="assets/images/48.jpg" style="width:50%" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="assets/images/49.jpg" style="width:50%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+      </div>
     </div>
     <div class="contactus">
         <div class="title">
@@ -168,12 +239,45 @@
     
     </div>
     </div>
+   
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
 
 
 
     <div id="Contact" class="footer">
+        
         <div class="container1">
             <div class="row">
                 <div class="footer-col">
