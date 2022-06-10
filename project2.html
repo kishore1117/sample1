@@ -25,12 +25,13 @@
             </ul>
         </div>
     </div>
-    <div id="home" class="box">
-        <h2>Just now creation </h2>
+    <div id="home" class="box ">
+            <h2 class="box ">Just now creation </h2>
+   
         <p> Just now creation is a organization with young talents,with a common goal to achive higher heights in this
             field of creativity.As a team we work to achieve the needs of the customers specific reqiurements and we
             provide a eligent touch to every project we do with attracts more customers to our organization. </p>
-        <a href="#section-1 " class="content">Read more</a>
+        <a href="#section-1 " class="content ">Read more</a>
     </div>
 
     <div class="body">
@@ -145,103 +146,28 @@
     
       <div class="row">
         <div class="column">
-          <img class="demo cursor" src="assets/images/44.jpg" style="width:50%" onclick="currentSlide(1)" alt="The Woods">
+          <img class="demo cursor" src="assets/images/44.jpg" style="width:50%" onclick="currentSlide(1)" alt="Artist">
         </div>
         <div class="column">
-          <img class="demo cursor" src="assets/images/45.jpg" style="width:50%" onclick="currentSlide(2)" alt="Cinque Terre">
+          <img class="demo cursor" src="assets/images/45.jpg" style="width:50%" onclick="currentSlide(2)" alt="Animatio car">
         </div>
         <div class="column">
-          <img class="demo cursor" src="assets/images/46.jpg" style="width:50%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          <img class="demo cursor" src="assets/images/46.jpg" style="width:50%" onclick="currentSlide(3)" alt="Movie posters">
         </div>
         <div class="column">
-          <img class="demo cursor" src="assets/images/47.jpg" style="width:50%" onclick="currentSlide(4)" alt="Northern Lights">
+          <img class="demo cursor" src="assets/images/47.jpg" style="width:50%" onclick="currentSlide(4)" alt="Animation">
         </div>
         <div class="column">
-          <img class="demo cursor" src="assets/images/48.jpg" style="width:50%" onclick="currentSlide(5)" alt="Nature and sunrise">
+          <img class="demo cursor" src="assets/images/48.jpg" style="width:50%" onclick="currentSlide(5)" alt="Movie posters">
         </div>    
         <div class="column">
-          <img class="demo cursor" src="assets/images/49.jpg" style="width:50%" onclick="currentSlide(6)" alt="Snowy Mountains">
+          <img class="demo cursor" src="assets/images/49.jpg" style="width:50%" onclick="currentSlide(6)" alt="Drawings">
         </div>
       </div>
     </div>
-    <div class="contactus">
-        <div class="title">
-            <h2>Get in touch</h2>
-        </div>
-        <div class="box1">
-           <div class="contact form">
-            <h3> Send a message</h3>
-            <form>
-                <div class="formBox">
-                    <div class="row50">
-                        <div class="inputBox">
-                            <span>First name:</span>
-                            <input type="text" placeholder="John">
-                        </div>
-                        <div class="inputBox">
-                            <span>Last Name:</span>
-                            <input type="text" placeholder="Cartor">
-                        </div>
-                    </div>
-                    <div class="row50">
-                        <div class="inputBox">
-                            <span>Email id::</span>
-                            <input type="text" placeholder="John@gmail.com">
-                        </div>
-                        <div class="inputBox">
-                            <span>Mobile number:</span>
-                            <input type="text" placeholder="+91 984 116 9613">
-                        </div>
-                    </div>
-                    </div>
-                    <div class="row100">
-                        <div class="inputBox">
-                            <span>Messages:</span>
-                            <textarea placeholder="Write your message here.."></textarea>
-                        </div>
-                </div>
-                <div class="row100">
-                    <div class="inputBox">
-                     <input type="submit" value="Send"> 
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>   
  
-                    </div>
-            </div>
-              
-               
-            </form>
-            
-          </div>
-          <div class="contact info">
-              <h3>Contacr Info</h3>
-              <div class="infoBox">
-                  <div>
-                      <span><ion-icon name="location"></ion-icon>
-                      </span>
-                      <p>23,JCN Street, MG Nagar<br>Poonamallee, Chennai, Tamil Nadu<br>INDIA</p>
-                  </div>
-                  <div>
-                    <span><ion-icon name="mail"></ion-icon>
-                    </span>
-                   <a href="mailto:withloveyogesh@gmail.com">withloveyogesh@gamil.com</a>
-                </div>
-                <div>
-                    <span><ion-icon name="call"></ion-icon></span>
-                   <a href="tel:+9677206518">+91 967 720 6518</a>
-                </div>
-                <ul class="sci">
-                    <li><a href="#"></a></li>
-                </ul>
-              </div>
-
-          </div>
-          <div class="contact map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7758844681425!2d80.09345191435439!3d13.0499327166866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528be174b58309%3A0xea050f0f5b4dfe41!2sJust%20now%20Creation!5e0!3m2!1sen!2sin!4v1652877825555!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-          
-    
-    </div>
-    </div>
-   
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
      
     <script>
         let slideIndex = 1;
@@ -272,8 +198,65 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-    </script>
 
+      
+       function submitForm(){
+   
+   
+    let name = document.querySelector(".name").value;
+    let email = document.querySelector(".email").value;
+    let message = document.querySelector(".message").value;
+    console.log(name, email, message);
+  
+    saveContactInfo(name, email, message);
+  
+    document.querySelector(".contact-form").reset();
+  
+    sendEmail(name,email,message);
+  
+  
+  
+  function sendEmail(name,email,message){
+        Email.send({
+            Host:"smtp.yourisp.com",
+            Username:"kishoreranganathan60@gmail.com",
+            Password:"njwpeztgsadvsqqz",
+            To:"kishoreranganathan60@gmail.com",
+            From:"kishoreranganathan60@gmail.com",
+            Subject:`${name}send you a message`,
+            body:`Name:${name} <br/> Email: ${email} <br/> Message:${message}`,
+  
+        }).then((message) => alert("Mail sent sucessfully"))
+      }
+    }
+   </script>     
+        <div class="one">
+            <div class="contact info">
+                <h3>Contacr Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"><i class='fas fa-map-marker-alt'></i></ion-icon>
+                        </span>
+                        <p>23,JCN Street, MG Nagar<br>Poonamallee, Chennai, Tamil Nadu<br>INDIA</p>
+                    </div>
+                    <div>
+                      <span><ion-icon name="mail"><i class="fa fa-envelope"></i></ion-icon>
+                      </span>
+                     <a href="mailto:withloveyogesh@gmail.com">withloveyogesh@gamil.com</a>
+                  </div>
+                  <div>
+                      <span><ion-icon name="call"><i class='fas fa-phone'></i></ion-icon></span>
+                     <a href="tel:+9677206518">+91 967 720 6518</a>
+                  </div>
+                  <ul class="sci">
+                      <li><a href="#"></a></li>
+                  </ul>
+                </div>
+      
+            </div>
+            <div class="contact map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7758844681425!2d80.09345191435439!3d13.0499327166866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528be174b58309%3A0xea050f0f5b4dfe41!2sJust%20now%20Creation!5e0!3m2!1sen!2sin!4v1652877825555!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+      
 
 
     <div id="Contact" class="footer">
@@ -287,16 +270,6 @@ function showSlides(n) {
                         <li><a href="#">our services </a></li>
                         <li><a href="#">privacy policy</a></li>
                         <li><a href="#">affliate program</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4> get help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">orders status</a></li>
-                        <li><a href="#">payment options</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

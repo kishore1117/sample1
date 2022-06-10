@@ -17,6 +17,7 @@ body{
     font-weight: 900;
     margin: 9vh;
     line-height: 160px;
+    height: 100vh;
 
     top:20vh;
     right: 40vh;
@@ -43,7 +44,7 @@ body{
 
 .header{
     width: auto;
-    height: 300px;
+    height: 90px;
    
     z-index: -3;
     opacity: 1.0;
@@ -224,17 +225,21 @@ body{
 }
 
 
+
 .creator{
     background-color: black;
     color: rgb(255, 255, 255);
     height: auto;
-    
+   
 }
 section{
     padding-top: 40px;
     padding-left: 0px;
     padding-right: 40px;
     padding-bottom: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
 }
 .container{
    display: flex;
@@ -283,6 +288,7 @@ section{
 html{
     scroll-behavior: smooth;
 }
+
 .box{
     display: flex;
     flex-direction: column;
@@ -290,7 +296,7 @@ html{
     align-items: center;
     text-align: center;
     width: 60%;
-    height: 80vh;
+    height: auto;
     margin: auto;
     
 }
@@ -298,12 +304,13 @@ html{
     font-size: 6rem;
     font-weight: bold;
     color: white;
+    
 }
 .box h2 span{
     opacity:0.5 ;
   
 }
-.box p{
+.quote{
     font-size: 1.4rem;
     font-weight: 300;
     color: #fff;
@@ -320,7 +327,15 @@ html{
     border-radius: 50px;
     border:1px solid #fff;
     transition: all 0.3s;
+    animation-delay: 0.7s;
 
+}
+.box p{
+    font-size:25px ;
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-delay: 0.2s;
+    margin-top: 130px;
 }
 .box a:hover{
     color: #fff;
@@ -345,17 +360,19 @@ html{
 
 }
 .footer{
-    background-color: #24262b;
+    background-color: transparent;
     padding: 70px 0;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
+
 }
 .footer-col{
     width: 25%;
@@ -507,10 +524,11 @@ ul{
 .contact info{
     background:white;
 }
+
 .contact h3{
-    color: #0e3959;
-    font-weight: 500;
-    font-size: 1.4em;
+    color:white;
+    font-weight: 800;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 .row50{
@@ -532,9 +550,9 @@ ul{
     gap: 20px;
 }
 .inputBox{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    
+    
+    width: 100%;
     margin-bottom: 10px;
 
 }
@@ -543,7 +561,7 @@ ul{
 }
   .inputBox span
   {
-      color: #18b7ff;
+      color: white;
       margin-top: 10px;
       margin-bottom: 5px;
       font-weight: 500;
@@ -564,35 +582,45 @@ ul{
     min-height: 220px;
     max-width: 500px;
     margin-bottom: 10px;
+    width: 100%;
 
 }
 .inputBox input[type="submit"]
 {
     background: #ff578b;
+    align-content: center;
     
     border: none;
     font-size: 1.1em;
-    max-width: 120px;
+    border-radius: 20px;
+    
     font-weight: 500;
     padding:  14px 15px;
+}
+.row100 {
+   text-align: center;
+  
 }
 .contactus{
     padding: 20px;
     margin: 0px;
+    display: grid;
 }
 
 .infoBox span{
-    background-color: #18b7ff ; 
-    color: #f5f5f5;
-    width: 60px;
+    background-color:rgb(151, 225, 243) ; 
+    color:white;
+    width: 1px;
     height: 20px;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     text-align: center;
-    
-   
-  
-     
+    text-decoration: none;
+}
+.infoBox a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
 }
 .title{
     text-align: center;
@@ -601,10 +629,11 @@ ul{
     padding: 10px;
     
 }
-.contact info{
-    background: #24262b;
+
+.contact info h3{
+    color: white;
 }
-.contactus{
+/*.contactus{
     box-sizing: border-box;
     margin: 0px; 
     padding: 0px;
@@ -612,12 +641,20 @@ ul{
     align-items: center;
     background-color:transparent;
     text-align : center;
-}
-.contact form{
+}*/ 
+/*.contact form{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 
+
+}*/
+.one{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+    margin-left:10% ;
+    margin-right: 10%;
 
 }
 .contact .infoBox{
@@ -666,7 +703,7 @@ img {
   .prev,
   .next {
     cursor: pointer;
-    position: ;
+    
     top: 30%;
     width: auto;
     padding: 16px;
@@ -739,6 +776,111 @@ img {
     box-sizing: border-box;
   }
   
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 35px;
+  }
+  
+  p {
+    text-align: center;
+    margin: 15px auto 0px auto;
+    font-size: 25px;
+    width: 80%;
+  }
+  #body p{
+      font-size: 16px;
+  }
+  .infoBox p{
+      font-size: 16px;
+      
+  }
+  .contact-form {
+    margin: 35px auto 0px auto;
+    width: 80%;
+  }
+  
+  .contact-form label {
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input {
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .contact-form input:focus {
+    border-bottom: 2px solid #1a883f;
+  }
+  
+  .contact-form textarea {
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 3px;
+    width: 100%;
+    font-family: inter;
+    font-weight: normal;
+  }
+  
+  .contact-form textarea:focus {
+    border-bottom: 2px solid #1a883f;
+  }
+  
+  .contact-form button {
+    font-size: 19px;
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    padding: 12px 20px;
+    background-color: #22b352;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-bottom: 3px solid #1a883f;
+  }
+  
+  .contact-form button:hover {
+    background-color: #1a883f;
+    border-bottom: 3px solid #22b352;
+  }
+  
+  @media all and (min-width: 1000px) {
+    .contact-form {
+      width: 40%;
+    }
+  }
+  
+  @media all and (min-width: 1080px) {
+    .contact-form {
+      width: 30%;
+    }
+  }
+  .anim{
+      opacity: 0;
+      transform: translate(60px);
+      animation: moveup 0.5s linear forwards;
+  }
+  @keyframes moveup {
+      100%{
+          opacity: 1;
+          transform: translate(0px);
+      }
+      
+  }
 
   
 
